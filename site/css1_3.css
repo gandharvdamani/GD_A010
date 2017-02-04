@@ -1,0 +1,21 @@
+.bg {
+  width: 500px;
+  height: 500px;
+ background-color: yellow
+}
+a:link , a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+	background-color: red;
+	display:block;
+	}      
+a:hover , a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	color: blue;
+	cursor: pointer;
+	   }
+.body {
+	background: #fff url(http://icloudpicture.com/wp-content/uploads/2015/08/White-Nice-Car-Wallpaper-HD.jpg) no-repeat bottom right;
+	   }
