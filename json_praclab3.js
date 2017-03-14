@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",
         
         // Call server to get the name
         $ajaxUtils
-          .sendGetRequest("json_data.txt", 
+          .sendGetRequest("data.json", 
             function (res) {
               var message = 
                 res.firstName + " " + res.lastName
