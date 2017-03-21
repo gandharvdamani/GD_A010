@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded",
   function (event) {
     
     // Unobtrusive event binding
-    document.querySelector("button")
+    document.getElementById("add")
       .addEventListener("click", function () {
         
         // Call server to get the name
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded",
                 .innerHTML = "<h2>" + message + "</h2>";
             });
       });
-  document.querySelector("button1")
+    document.getElementById("Subtract")
       .addEventListener("click", function () {
         
         // Call server to get the name
