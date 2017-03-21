@@ -3,23 +3,17 @@ document.addEventListener("DOMContentLoaded",
   function (event) {
     
     // Unobtrusive event binding
-    document.querySelector("button")
+    document.getElementById("add")
       .addEventListener("click", function () {
         
         // Call server to get the name
         $ajaxUtils
-          .sendGetRequest("testdata.json", 
+          .sendGetRequest("num1.json", 
             function (res) {
-
-          
-              var message = "Marks are:";
-              var message1 = res.Maths;
-              var message2 = res.WP;
-              message = message+message1+message2;
-              }
+              var message = "Marks are: ";
+               var message1= res.Maths + res.WP;
+              message += message1;
               document.querySelector("#content")
                 .innerHTML = "<h2>" + message + "</h2>";
             });
       });
-  }
-);
