@@ -10,18 +10,13 @@ document.addEventListener("DOMContentLoaded",
         $ajaxUtils
           .sendGetRequest("testdata.json", 
             function (res) {
-            var name = res.responseText;
-            
-              if (res.student1) {
-                message += "Maths";
-              }
-              else {
-                message += " doesn't like Chinese food";
-              }
-              message += " and uses ";
-              message += res.numberOfDisplays + 1;
-              message += " displays for coding.";
 
+          
+              var message = "Marks are:";
+              var message1 = res.Maths;
+              var message2 = res.WP;
+              message = message+message1+message2;
+              }
               document.querySelector("#content")
                 .innerHTML = "<h2>" + message + "</h2>";
             });
